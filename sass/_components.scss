@@ -203,12 +203,12 @@ p{
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    box-shadow: 0 0 6px #3E86F5;
+    box-shadow: 0 0 6px #fd9662;
     border-radius: 10px;
     font-weight: 300;
     transition: all 1s;
     &:hover{
-        box-shadow: 0 0 15px $color-azul;
+        box-shadow: 0 0 15px $color-atardecer;
         transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
           
           
@@ -379,15 +379,17 @@ p{
     color: black;
     flex-direction: row;
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
     background-image: none;
     background-color: transparent;
     .img-ban{
         width: 500px;
-        height: 500px;
+        height: 350px;
         border-radius: 30px;
         background-color: black;
-        background: url(https://www.godominicanrepublic.com/wp-content/uploads/2018/03/bahi-a-de-las-aguilas_1.jpg?x41638) cover;
+        background: url(https://mediospanorama.com/wp-content/uploads/2020/05/Iguana-Rinoceronte-e1589638264728-850x560.jpg) no-repeat;
+        background-size: cover;
+        background-position:center bottom;
     }
 
 }
