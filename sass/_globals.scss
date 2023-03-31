@@ -1,0 +1,232 @@
+$background:#F7F7F7;
+$color-azul-oscuro:#004C79;
+$color-verde-esmerald:#53AE65;
+$color-atardecer:#F46B27;
+$color-azul:#3E86F5;
+$color-rosa-text:#F178B6;
+$color-rosa:#FCDDEC;
+$background-oscuro:#e3681c2a;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*------Header-----*/
+
+.header{
+    background-image: url("../assets/img/cap-cana_003.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; 
+
+    h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 9em;
+    font-weight: 900;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(https://img.freepik.com/fotos-premium/siluetas-palmeras-coco-sobre-fondo-cielo-mar-azul-al-atardecer_63726-105.jpg?w=1060);
+    background-attachment: fixed;
+    background-clip: text;
+    background-position: center top;
+    }
+    p{
+        width: 29em;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        opacity: 0.9;
+        margin-top: -65px;
+        align-items: justify;
+    }
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+section{
+    height: 100vh;
+}
+
+.special-ofert{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0 200px;
+    
+
+    h2{
+        padding: 1rem 0rem;
+        text-align: center;
+        margin: 0;
+        
+    }
+}
+
+.card-section{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+
+
+.about{
+    height: 100%;
+    .content{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: 60px;
+    img{
+        width: 50%;
+        border-radius: 75px;
+        }
+    .descrip{
+        width:60%;
+        margin-left: -35%;
+
+        p{
+            text-align: justify;
+        }
+        }
+    }
+}
+
+footer{
+    padding: 0 130px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f100;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 50px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  /*=================Pagina de destinos===================*/
+
+  
+header{
+    height: 88.6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+}
+.destino-descrip-up{
+    overflow: hidden;
+    height: 88.6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-direction: row-reverse;
+}
+.destino-descrip{
+    width: 35%;
+    h1{
+        font-weight: 600;
+        font-size: 44px;
+        
+    }
+}
+.imagen-destino{
+    justify-content: center;
+    align-items: start;
+    img{
+        width: 400px;
+        margin-top: -150px;
+    }
+}
+
+.inform-destino{
+    background-color: $background-oscuro;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    h2{
+        font-weight: 600;
+        font-size: 35px;
+        padding-top: 5rem;
+    }
+}
+
+.card-section-destino{
+    display: flex;
+    gap: 2rem;
+}
+
+.clasificacion-destino{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff31;
+    padding: 60px;
+    .clasificacion-destino-sub{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        
+        h3{
+            font-size: 40px;
+            font-weight: 600;
+            color: $color-atardecer;
+        }
+    }
+}
+
+.sec-1{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}

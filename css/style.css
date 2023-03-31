@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+p {
+  margin: 0;
+}
+
+/*----------------------------Menu------------------------*/
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 7rem;
+  padding: 5px;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 0.5px solid rgba(180, 181, 182, 0.4980392157);
+  z-index: 0;
+}
+.nav-menu .menu-sm {
+  float: right;
+  margin: 0px;
+}
+.nav-menu .menu-sm #btn-regis {
+  background-color: #3bbb55;
+  color: white;
+  padding: 0.5rem;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+.nav-menu .menu-sm #btn-regis:hover {
+  transform: scale(1.1);
+}
+.nav-menu .menu-sm li {
+  display: inline;
+  float: right;
+  list-style: none;
+  margin: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 15px;
+  padding-top: 0.5rem;
+}
+.nav-menu .menu-sm li a {
+  text-decoration: none;
+  color: #3E86F5;
+}
+.nav-menu .menu-sm .active {
+  border-bottom: 2px solid #3E86F5;
+  border-radius: 1px;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #004C79 !important;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.card-ofert {
+  width: 280px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1843137255);
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+  transition: all 500ms;
+}
+.card-ofert:hover {
+  transform: scale(1.2);
+}
+.card-ofert img {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+}
+.card-ofert .inform {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+}
+.card-ofert .inform p {
+  margin: 0;
+  font-size: 10px;
+  margin-top: 2px;
+  color: rgba(0, 0, 0, 0.5333333333);
+  font-weight: medium;
+}
+.card-ofert .card-fo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 15px;
+}
+.card-ofert .card-fo h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.card-ofert .card-fo .sub-fo {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.card-ofert .card-fo .sub-fo .reservetion {
+  padding: 0.5rem;
+  font-size: 10px;
+  font-weight: 600;
+  border: none;
+  background-color: #F2F6FF;
+  color: #3E86F5;
+  border-radius: 10px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.banner .ban {
+  width: 80%;
+  height: 75%;
+  background-color: #3E86F5;
+  border-radius: 50px;
+  background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.268) 0%, rgba(10, 10, 10, 0.268) 100%), url(../assets/img/al-atardecer-playa-tropical-mar-palmera-coco.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
+}
+.banner .ban h2 {
+  color: white;
+  text-align: center;
+  width: 80%;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.relax, .relax-d, .adventure {
+  font-size: 10px;
+  color: #0055ff;
+  background-color: #f1f1fd;
+  border-radius: 50px;
+  height: 15px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adventure {
+  background-color: #f1f1fd;
+  color: #0e880a;
+  width: 55px;
+}
+
+.text-shadow {
+  text-shadow: 0 0 10px white;
+}
+
+/*=======================Botones=====================*/
+.btn-normal {
+  font-size: 20px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 6px #3E86F5;
+  border-radius: 10px;
+  font-weight: 300;
+  transition: all 1s;
+}
+.btn-normal:hover {
+  box-shadow: 0 0 15px #3E86F5;
+  transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
+}
+
+.btn-secundario {
+  font-size: 20px;
+  border: none;
+  color: #3E86F5;
+  text-decoration: none;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 6px #ffffff;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 1s;
+}
+.btn-secundario:hover {
+  box-shadow: 0 0 10px white;
+  transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
+}
+
+.btn-a, .btn-a-up {
+  font-size: 20px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #3bbb55;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 6px #3bbb55;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 1s;
+}
+.btn-a:hover, .btn-a-up:hover {
+  box-shadow: 0 0 15px #3bbb55;
+  transform: rotate3d(10, 0, 1000, 1deg) scale(1.1);
+}
+
+.btn-a-up {
+  background-color: #F46B27;
+  box-shadow: 0 0 6px #F46B27;
+}
+.btn-a-up:hover {
+  box-shadow: 0 0 15px #F46B27;
+  transform: rotate3d(10 0 1000 1deg) scale(1.1);
+}
+
+/*========================Colores=======================*/
+.color-verde {
+  color: #3bbb55;
+}
+
+.color-verde-bg {
+  background-color: #3bbb55;
+}
+
+.color-azul {
+  color: #3E86F5;
+}
+
+.color-azul-bg {
+  background-color: #3E86F5;
+}
+
+.color-atardecer {
+  color: #F46B27;
+}
+
+.color-atardecer-bg {
+  background-color: #F46B27;
+}
+
+.color-amarillo {
+  color: #FFC107;
+}
+
+.color-amarillo-bg {
+  background-color: #FFC107;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+.card:hover {
+  box-shadow: 0 0 14px rgba(244, 107, 39, 0.2901960784);
+  transform: scale(1.2);
+}
+.card img {
+  width: 100%;
+  height: 209px;
+  border-radius: 10px;
+}
+
+.descrip-card {
+  height: 40%;
+  padding: 1rem;
+}
+.descrip-card h3 {
+  font-size: 20px;
+}
+.descrip-card .descrip-card-sub {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+.descrip-card .descrip-card-sub .destino {
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+}
+.descrip-card .descrip-card-sub .calificacion {
+  display: flex;
+  font-size: 12px;
+}
+.descrip-card .descrip-card-sub .precio {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.descrip-card .descrip-card-sub .precio span {
+  font-size: 8px;
+}
+
+.destino-descrip-sub {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 30px;
+  background-image: url(https://www.delazonaoriental.net/wp-content/uploads/2021/01/flamenco.jpg);
+  background-size: cover;
+}
+.destino-descrip-sub div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
+}
+.destino-descrip-sub div a {
+  align-self: flex-start;
+}
+
+.promo-ban {
+  height: 85vh;
+}
+
+.hastag {
+  font-size: 20px;
+  color: #FFC107;
+  display: flex;
+  justify-content: center;
+}
+
+.relax-d {
+  padding: 1rem 2rem;
+  align-self: start;
+  font-size: 20px;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*------Header-----*/
+.header {
+  background-image: url("../assets/img/cap-cana_003.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.header h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 9em;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(https://img.freepik.com/fotos-premium/siluetas-palmeras-coco-sobre-fondo-cielo-mar-azul-al-atardecer_63726-105.jpg?w=1060);
+  background-attachment: fixed;
+  background-clip: text;
+  background-position: center top;
+}
+.header p {
+  width: 29em;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  opacity: 0.9;
+  margin-top: -65px;
+  align-items: justify;
+}
+
+body {
+  background-color: #F7F7F7;
+}
+
+section {
+  height: 100vh;
+}
+
+.special-ofert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 0 200px;
+}
+.special-ofert h2 {
+  padding: 1rem 0rem;
+  text-align: center;
+  margin: 0;
+}
+
+.card-section {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.about {
+  height: 100%;
+}
+.about .content {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 60px;
+}
+.about .content img {
+  width: 50%;
+  border-radius: 75px;
+}
+.about .content .descrip {
+  width: 60%;
+  margin-left: -35%;
+}
+.about .content .descrip p {
+  text-align: justify;
+}
+
+footer {
+  padding: 0 130px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(241, 241, 241, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/*=================Pagina de destinos===================*/
+header {
+  height: 88.6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.destino-descrip-up {
+  overflow: hidden;
+  height: 88.6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  flex-direction: row-reverse;
+}
+
+.destino-descrip {
+  width: 35%;
+}
+.destino-descrip h1 {
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.imagen-destino {
+  justify-content: center;
+  align-items: start;
+}
+.imagen-destino img {
+  width: 400px;
+  margin-top: -150px;
+}
+
+.inform-destino {
+  background-color: rgba(227, 104, 28, 0.1647058824);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-direction: column;
+}
+.inform-destino h2 {
+  font-weight: 600;
+  font-size: 35px;
+  padding-top: 5rem;
+}
+
+.card-section-destino {
+  display: flex;
+  gap: 2rem;
+}
+
+.clasificacion-destino {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1921568627);
+  padding: 60px;
+}
+.clasificacion-destino .clasificacion-destino-sub {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.clasificacion-destino .clasificacion-destino-sub h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #F46B27;
+}
+
+.sec-1 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-sec {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+/*----Componentes------*/
+/*----estilos-globales----*/
+/*----Animations----*/
+
+/*# sourceMappingURL=style.css.map */

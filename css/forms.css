@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/img/al-atardecer-playa-tropical-mar-palmera-coco.jpg);
+  background-size: cover;
+}
+
+.content {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.306);
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.154);
+}
+.content .img {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: cadetblue;
+  background-image: url(http://static1.squarespace.com/static/5b329780365f02e437a230ae/5b48c510758d465bfd1faffe/5b48c6240e2e72fb07ad7956/1546274569272/?format=1500w);
+  background-position: center;
+  background-size: cover;
+}
+.content .formulario {
+  width: 60%;
+  height: 100%;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  gap: 2rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.154);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.603);
+}
+.content .formulario .title {
+  flex-direction: column;
+  gap: -10px;
+}
+.content .formulario .title h2 {
+  color: #F46B27;
+}
+.content .formulario .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content .formulario .form div {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.content .formulario .form div input {
+  width: 100%;
+  border: none;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.16);
+}
+.content .formulario .form div input::placeholder {
+  color: #000000;
+}
+
+.btn-form {
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3E86F5;
+  padding: 0.5rem 1.5rem;
+  transition: all 1s;
+}
+.btn-form:hover {
+  transform: rotate3d(1, 1, 1, 1deg) scale(1.1);
+  box-shadow: 0 0 15px #3E86F5;
+}
+
+/*# sourceMappingURL=forms.css.map */
