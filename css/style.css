@@ -48,12 +48,23 @@ p {
   border-radius: 1px;
 }
 
-.logo {
+.logo, .logo-2 {
   font-weight: 500;
   font-size: 2rem;
   color: #004C79 !important;
   font-weight: 600;
   margin-top: 0.5rem;
+}
+
+.logo-2 {
+  margin: 0rem;
+  padding: 0;
+}
+
+#p-elegant {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  font-weight: 100;
 }
 
 .card-ofert {
@@ -609,6 +620,23 @@ header {
 .footer-bott ul li a i {
   font-size: 24px;
   color: white;
+}
+
+@media (max-width: 700px) {
+  .footer-bott {
+    justify-content: center;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  ul li a i {
+    display: none;
+  }
+}
+/*=========================Galeria=================================*/
+.header-galery {
+  width: 100%;
 }
 
 /*----Componentes------*/

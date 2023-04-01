@@ -75,6 +75,18 @@ p{
     
 }
 
+.logo-2{
+    @extend .logo;
+    margin: 0rem;
+    padding: 0;
+}
+
+#p-elegant{
+    font-size: 14px;
+    margin-top: 0.5rem;
+    font-weight: 100;
+}
+
 .card-ofert{
     width: 280px;
     height: auto;
