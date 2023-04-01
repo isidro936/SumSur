@@ -620,6 +620,11 @@ header {
 .footer-bott ul li a i {
   font-size: 24px;
   color: white;
+  transition: all 500ms;
+}
+.footer-bott ul li a i:hover {
+  color: #53AE65;
+  rotate: 3deg;
 }
 
 @media (max-width: 700px) {
