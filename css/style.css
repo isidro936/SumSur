@@ -199,7 +199,7 @@ p {
 }
 
 .btn-a, .btn-a-up {
-  font-size: 20px;
+  font-size: 1.3rem;
   border: none;
   text-decoration: none;
   color: white;
@@ -212,7 +212,7 @@ p {
 }
 .btn-a:hover, .btn-a-up:hover {
   box-shadow: 0 0 15px #3bbb55;
-  transform: rotate3d(10, 0, 1000, 1deg) scale(1.1);
+  transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
 }
 
 .btn-a-up {
@@ -323,7 +323,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 60%;
+  width: 60vw;
 }
 .destino-descrip-sub div a, .destino-descrip-sub-2 div a {
   align-self: flex-start;
@@ -520,6 +520,14 @@ header {
   margin-top: -150px;
 }
 
+@media (max-width: 700px) {
+  .imagen-destino {
+    display: none;
+  }
+  .destino-descrip {
+    width: 90%;
+  }
+}
 .inform-destino {
   background-color: rgba(227, 104, 28, 0.1647058824);
   display: flex;
@@ -574,6 +582,33 @@ header {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+}
+
+/*=======Footer=======*/
+.footer-bott {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: #3E86F5;
+  padding: 0 30px;
+  color: white;
+}
+.footer-bott p {
+  font-size: 15px;
+  font-family: monospace;
+}
+.footer-bott ul {
+  list-style: none;
+  margin: 0;
+}
+.footer-bott ul li a {
+  margin-left: 20px;
+}
+.footer-bott ul li a i {
+  font-size: 24px;
+  color: white;
 }
 
 /*----Componentes------*/
