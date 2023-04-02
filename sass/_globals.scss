@@ -262,11 +262,23 @@ header{
         list-style: none;
         margin: 0;
         li{
+            transition: all 1s;
+            &:hover{
+                transform: rotate(360deg);
+            }
             a{
                 margin-left: 20px;
+              
                 i{
                     font-size: 24px;
                     color: white;
+                    transition: all 500ms;
+
+                    &:hover{
+                        box-shadow: 0, 0 ,0, 14px black;
+                    }
+
+                    
                 }
             }
         }

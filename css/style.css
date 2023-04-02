@@ -614,6 +614,12 @@ header {
   list-style: none;
   margin: 0;
 }
+.footer-bott ul li {
+  transition: all 1s;
+}
+.footer-bott ul li:hover {
+  transform: rotate(360deg);
+}
 .footer-bott ul li a {
   margin-left: 20px;
 }
@@ -623,8 +629,7 @@ header {
   transition: all 500ms;
 }
 .footer-bott ul li a i:hover {
-  color: #53AE65;
-  rotate: 3deg;
+  box-shadow: 0, 0, 0, 14px black;
 }
 
 @media (max-width: 700px) {
