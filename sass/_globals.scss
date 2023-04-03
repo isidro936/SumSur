@@ -88,23 +88,25 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    .titulo-transparente{
-        font-size: 350px;
-        font-weight: 700;
-        text-align: center;
-        color: #5555550c;
-        position: absolute;
-    }
+   
     .sect-phot{
-        width: 98%;
+        z-index: 2;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #ffffff;
-        border-radius: 15px;
-        box-shadow: 0px 0px 6px rgb(131, 131, 131);
+        background-color: #f7f7f732;
+        backdrop-filter: blur(10px);
         gap: 1rem;
+    }
+}
+
+
+@media(max-width:1000px){
+    .sect-phot{
+        flex-direction: column;
+        width: 100vw;
     }
 }
 
