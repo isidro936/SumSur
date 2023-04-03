@@ -84,6 +84,26 @@ section{
     gap: 3rem;
 }
 
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .titulo-transparente{
+        font-size: 350px;
+        font-weight: 700;
+        text-align: center;
+        color: #55555531;
+        position: absolute;
+    }
+    .sect-phot{
+        width: 95%;
+        height: 90%;
+        display: flex;
+        background-color: #f5f5f586;
+        border-radius: 40px;
+        box-shadow:0 ,0, 14px black;
+    }
+}
 
 
 .about{
@@ -264,7 +284,8 @@ header{
         li{
             transition: all 1s;
             &:hover{
-                transform: rotate(360deg);
+                transform: translate(100px);
+                transform: rotate(30deg);
             }
             a{
                 margin-left: 20px;

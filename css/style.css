@@ -378,6 +378,11 @@ p {
   font-weight: 700;
 }
 
+/*==========photos===========*/
+.photos-content {
+  background-color: transparent;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -446,6 +451,27 @@ section {
   height: 100%;
   flex-direction: row;
   gap: 3rem;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photos .titulo-transparente {
+  font-size: 350px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(85, 85, 85, 0.1921568627);
+  position: absolute;
+}
+.photos .sect-phot {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  background-color: rgba(245, 245, 245, 0.5254901961);
+  border-radius: 40px;
+  box-shadow: 0, 0, 14px black;
 }
 
 .about {
@@ -618,7 +644,8 @@ header {
   transition: all 1s;
 }
 .footer-bott ul li:hover {
-  transform: rotate(360deg);
+  transform: translate(100px);
+  transform: rotate(30deg);
 }
 .footer-bott ul li a {
   margin-left: 20px;
