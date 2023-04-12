@@ -24,54 +24,38 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../assets/img/al-atardecer-playa-tropical-mar-palmera-coco.jpg);
-    background-size: cover;
+    background: linear-gradient(to right,black, rgb(84, 83, 83));
 
    
 
 }
 
 .content{
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.306);
     flex-direction: row;
     border-radius: 20px;
-    padding: 10px;
-    gap: 10px;
-    border: 0.5px solid rgba(0, 0, 0, 0.154);
-   
-    .img{
-        width: 50%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: cadetblue;
-        background-image: url(http://static1.squarespace.com/static/5b329780365f02e437a230ae/5b48c510758d465bfd1faffe/5b48c6240e2e72fb07ad7956/1546274569272/?format=1500w);
-        background-position: center;
-        background-size: cover;
-        
+    background-color: #ffffff22;
+    backdrop-filter: blur(5px);
 
-    }
     .formulario{
-        width: 60%;
+        width: 100%;
         height: 100%;
-        background-color: $background;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-radius: 10px;
+        border-radius: 20px;
         text-align: center;
         gap: 2rem;
-        border: 0.5px solid rgba(0, 0, 0, 0.154);
-        box-shadow:0 0 10px rgba(255, 255, 255, 0.603) ;
 
         .title{
             flex-direction: column;
             gap: -10px;
+            color: white;
             h2{
                 color: $color-atardecer;
             }
@@ -90,7 +74,7 @@ body{
                     background-color: white;
                     padding: 0.5rem 1rem;
                     border-radius: 10px;
-                    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.16);
+                    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.294);
                     
                     &::placeholder{
                         color: #000000;
@@ -113,5 +97,17 @@ body{
         transform:rotate3d(1, 1, 1, 1deg) scale(1.1);
         box-shadow: 0 0 15px #3E86F5;
     }
+}
+
+/*==========decoraciones============*/
+
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color: $color-verde-esmerald;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 10%;
 }
 
