@@ -6,6 +6,7 @@ $color-azul:#3E86F5;
 $color-rosa-text:#F178B6;
 $color-rosa:#FCDDEC;
 $background-oscuro:#e3681c2a;
+$color-amarillo:#FFC107;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
 *{
@@ -21,7 +22,7 @@ $background-oscuro:#e3681c2a;
     background-image: url("../assets/img/cap-cana_003.jpg");
     background-size: cover;
     background-position: center;
-    height: 89vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +34,7 @@ $background-oscuro:#e3681c2a;
     font-family: sans-serif;
     font-size: 9em;
     font-weight: 900;
+    margin-top: -50px;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     background-image: url(https://img.freepik.com/fotos-premium/siluetas-palmeras-coco-sobre-fondo-cielo-mar-azul-al-atardecer_63726-105.jpg?w=1060);
@@ -40,17 +42,8 @@ $background-oscuro:#e3681c2a;
     background-clip: text;
     background-position: center top;
     }
-    p{
-        width: 29em;
-        font-size: 40px;
-        font-weight: 600;
-        text-align: center;
-        color: white;
-        opacity: 0.9;
-        margin-top: -65px;
-        align-items: justify;
-    }
 }
+
 
 body{
     background-color: #F7F7F7;
@@ -77,7 +70,90 @@ section{
         
     }
 }
+.sec-opin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        position: absolute;
+        padding: 20px;
+        font-size: 50px;
+        font-weight: 500;
+        color: $color-atardecer;
+        margin-bottom: 425px;
+    }
+}
+.opinion{
+    background-color: rgb(239, 239, 239);
+    width: 98%;
+    height: 95%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    .messa{
+        width: 45%;
+        height: 60%;
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 12px 1px rgba(178, 178, 178, 0.474);
+        align-items: center;
+        justify-content: center;
+    
+       .text-messa{
+        font-size: 15px;
+        font-weight: 400;
+        width: 80%;
+        text-align: center;
+        position: relative;
+        span{
+            color: #007bff;
+            font-size: 20px;
+            font-weight: 500;
 
+        }
+       }
+       .user{
+        width: 100px;
+        height: 90px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-sizing: content-box;
+        border-radius: 45%;
+        position: absolute;
+        margin-top: 270px;
+        border-bottom: 1px solid rgb(182, 182, 182);
+       
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .star{
+            background-color: white;
+            border-radius: 20px;    
+            display: flex;
+            justify-content: center;
+            align-items: center;       
+            box-shadow: 0 0 14px rgba(213, 213, 213, 0.456);
+            position: relative;
+            width: 70px;
+            left: 70px;
+            bottom: 80px;
+            span{
+                i{
+                    color: $color-amarillo;
+                }
+            }
+        }
+
+       }
+    }
+}
 .card-section{
     display: flex;
     height: 100%;
@@ -98,6 +174,7 @@ section{
             font-size: 325px;
             font-weight: 900;
             color: $color-atardecer;
+            opacity: 0.5;
 
         }
        
@@ -110,7 +187,6 @@ section{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #f1f0f0b0;
         backdrop-filter: blur(1px);
         padding: 50px;
         gap: 1rem;
@@ -165,7 +241,7 @@ footer{
   
 
   ::-webkit-scrollbar-track {
-    background-color: #f1f1f100;
+    background-color: #00000000;
   }
   
 
