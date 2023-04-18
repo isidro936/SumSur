@@ -396,13 +396,29 @@ p {
   height: 50px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.202);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+.content-form .title-form .div1 {
+  background-color: #f46b27;
+  font-weight: 700;
+  padding: 0.2rem 1rem;
+  color: white;
+  border-radius: 10px;
+}
+.content-form .title-form .div p i {
+  transform: rotate(30deg);
 }
 .content-form .form {
   width: 75vw;
   height: 150px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.202);
+  border-top-left-radius: 0px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.202);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -432,27 +448,74 @@ p {
   color: white;
 }
 
-.form2 {
+.form2, .form1 {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  justify-content: space-between;
+  padding: 0.2rem;
 }
-.form2 .cont-f1 {
+
+.cont-f1 {
   padding: 1rem 1rem;
 }
-.form2 .cont-f1 p {
+.cont-f1 p {
   font-weight: 700;
 }
-.form2 .cont-f1 input {
+
+.input {
   border: none;
   width: 135px;
 }
-.form2 .cont-f1 input:focus {
+.input:focus {
   border: none;
   outline: none;
 }
-.form2 .cont-f1 input:active {
+.input:active {
   border: none;
+}
+
+.form1 {
+  justify-content: space-between;
+}
+.form1 select {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*===========Mapa=============*/
+.map {
+  width: 80%;
+  height: 70%;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.149);
+  position: absolute;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map-title {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 35%;
+  height: 25%;
+  border-radius: 25px;
+  top: 100px;
+  right: 250px;
+  padding: 20px;
+}
+.map-title p {
+  font-size: 17px;
+  font-weight: 700;
+}
+.map-title span {
+  padding-top: 100px;
+  font-size: 15px;
 }
 
 * {
@@ -472,14 +535,12 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
 }
 .header h1 {
   color: white;
   font-family: sans-serif;
   font-size: 9em;
   font-weight: 900;
-  margin-top: -50px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: url(https://img.freepik.com/fotos-premium/siluetas-palmeras-coco-sobre-fondo-cielo-mar-azul-al-atardecer_63726-105.jpg?w=1060);
@@ -677,8 +738,8 @@ footer {
 }
 
 /*=================Pagina de destinos===================*/
-header {
-  height: 88.6vh;
+.header-destino {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -842,9 +903,73 @@ header {
     display: none;
   }
 }
+.sec-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*=========================Galeria=================================*/
 .header-galery {
   width: 100%;
+}
+
+/*=============Sobre nosotros==============*/
+.header-about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-direction: column;
+}
+.header-about h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 9em;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../assets/img/bahia-de-las-aguilas-pedernales.jpg);
+  background-clip: text;
+  background-position: center bottom;
+}
+.header-about p {
+  font-size: 30px;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../assets/img/bahia-de-las-aguilas-pedernales.jpg);
+  background-clip: text;
+  background-position: center bottom;
+}
+
+.sec-about {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+.sec-about .content-about {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.img-about {
+  display: flex;
+  justify-content: center;
+}
+.img-about img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
 }
 
 /*----Componentes------*/

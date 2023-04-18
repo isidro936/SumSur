@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Animations AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- estilos -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/logo sumsur.ico" type="image/x-icon">
-    <!-- Animations AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 
     
@@ -25,7 +25,7 @@
         
         <ul class="menu-sm">
             <li id="btn-regis"><a href="login.html" id="btn-regis">Registrate</a></li>
-            <li><a href="">Nosotros</a></li>
+            <li><a href="../html/Nosotros.html">Nosotros</a></li>
             <li><a href="">Contactos</a></li>
             <li><a href="">Galeria</a></li>
             <li><a href="">Actividades</a></li>
@@ -33,28 +33,60 @@
             <li class="active"><a class="active" href="">Inicio</a></li>
         </ul>
 
-        
-    
     </nav>
+
     <header class="header">
         <h1>SUMSUR</h1>
 
         <div class="content-form">
+            <div class="title-form">
+                <div class="div1">
+                    <p><i class="bi bi-building-fill"></i> Hotel</p>
+                </div>
+                <div class="div">
+                    <p><i class="bi bi-airplane-fill"></i> Vuelos</p>
+                </div>
+            </div>
             <div class="form">
                 
               <div class="form1 -f">
 
+                <div class="cont-f1">
+                    <p>Destino</p>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Playas
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                </div>
+                <i class="bi bi-building-fill color-atardecer"></i>
+                <div class="cont-f1">
+                    <p>Hotel</p>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Alojamiento
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                </div>
+
               </div> 
+
               <div class="form2 -f">
 
                 <div class="cont-f1">
                     <p>Entrada</p>
-                    <input type="date">
+                    <input type="date" class="input">
                 </div>
-                <i class="bi bi-building-fill color-atardecer"></i>
+                <i class="bi bi-calendar-event-fill color-atardecer"></i>
                 <div class="cont-f1">
-                    <p>Entrada</p>
-                    <input type="date">
+                    <p>Salida</p>
+                    <input type="date" class="input">
                 </div>
 
               </div>
@@ -93,10 +125,18 @@
                 
             </div>
         </section>
-        <section>
+        <section class="sec-map">
 
-            <div>
+            <div class="map" data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="1000">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d969534.4152424763!2d-71.87078107416255!3d18.33155304289295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdestinos%20turisticos%20del%20suroeste%20de%20republica%20dominicana!5e0!3m2!1ses-419!2sdo!4v1681649490027!5m2!1ses-419!2sdo" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
+            </div>
+            <div class="map-title" data-aos="fade-up"
+            data-aos-duration="1500">
+                <p>¡Descubre todo lo que tenemos para ti!</p>
+                <span>podrás explorar los mejores destinos turísticos y atracciones en la región suroeste. ¡No te pierdas la oportunidad de vivir aventuras inolvidables</span>
             </div>
 
 
