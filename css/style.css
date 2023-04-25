@@ -3,12 +3,18 @@ p {
   margin: 0;
 }
 
+.list {
+  list-style: disc;
+  font: 16px;
+}
+
 /*----------------------------Menu------------------------*/
 .nav-menu {
   display: flex;
   position: fixed;
   top: 0;
   width: 100vw;
+  height: 11vh;
   justify-content: space-around;
   flex-direction: row;
   gap: 7rem;
@@ -229,6 +235,21 @@ p {
   transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
 }
 
+.btn-e {
+  font-size: 1.3rem;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 1s;
+}
+.btn-e:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.0431372549);
+  transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
+}
+
 .btn-a-up {
   background-color: #F46B27;
   box-shadow: 0 0 6px #F46B27;
@@ -367,22 +388,47 @@ p {
   background-color: transparent;
 }
 
-.container-g {
+/*----------------------- Galeria------------------*/
+.cont-img {
+  float: right;
+  width: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.photo-g {
-  height: 300px;
-  background-color: #F46B27;
-  flex: 1;
-  transition: 0.3s;
-  margin: 0 5px;
+.img-gal {
+  transform: rotate(-10deg);
+  width: 500px;
+  position: relative;
+  top: 75px;
 }
-.photo-g:hover {
-  flex: 3;
-  background-color: #F46B27;
+
+.title-gal {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 150px;
+  left: 200px;
+}
+.title-gal h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 7em;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../assets/img/bahia-de-las-aguilas-pedernales.jpg);
+  background-clip: text;
+  background-position: center bottom;
+}
+.title-gal p {
+  font-weight: 900;
+  text-align: justify;
+  position: relative;
+  font-size: 20px;
+  width: 400px;
 }
 
 /*=============forms===========*/
@@ -518,11 +564,37 @@ li {
   font-size: 15px;
 }
 
+.img-about {
+  height: 90vh;
+  width: 30%;
+  border-radius: 10px;
+  background-image: url(https://img.freepik.com/foto-gratis/turismo-cultural_23-2147641193.jpg?size=626&ext=jpg&ga=GA1.1.63583747.1672681572&semt=ais);
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px;
+}
+
+.img-can {
+  width: 180px;
+  height: 180px;
+}
+
+#img {
+  height: 500px;
+  width: 100%;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.p-fino {
+  text-align: justify;
+  line-height: 29px;
+  font-size: 16px;
 }
 
 /*------Header-----*/
@@ -554,7 +626,11 @@ body {
 }
 
 section {
-  height: 100vh;
+  height: 89vh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .special-ofert {
@@ -582,7 +658,7 @@ section {
   padding: 20px;
   font-size: 50px;
   font-weight: 500;
-  color: #F46B27;
+  color: #ff722c;
   margin-bottom: 425px;
 }
 
@@ -670,7 +746,7 @@ section {
 .photos .p-title h2 {
   font-size: 325px;
   font-weight: 900;
-  color: #F46B27;
+  color: #ff722c;
   opacity: 0.5;
 }
 .photos .sect-phot {
@@ -722,10 +798,12 @@ footer {
 
 ::-webkit-scrollbar {
   width: 8px;
+  background-color: transparent;
+  position: absolute;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -820,7 +898,7 @@ footer {
 .clasificacion-destino .clasificacion-destino-sub h3 {
   font-size: 40px;
   font-weight: 600;
-  color: #F46B27;
+  color: #ff722c;
 }
 
 .sec-1 {
@@ -850,6 +928,10 @@ footer {
 }
 
 /*=======Footer=======*/
+footer {
+  background-color: rgba(62, 135, 245, 0.1098039216);
+}
+
 .footer-bott {
   display: flex;
   align-items: center;
@@ -911,7 +993,10 @@ footer {
 
 /*=========================Galeria=================================*/
 .header-galery {
-  width: 100%;
+  height: 89vh;
+  margin-top: 11vh;
+  display: flex;
+  background-color: rgba(0, 123, 255, 0.1254901961);
 }
 
 /*=============Sobre nosotros==============*/
@@ -950,28 +1035,115 @@ footer {
   height: 50vh;
 }
 .sec-about .content-about {
-  width: 70%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
-  width: 70%;
 }
 
-.img-about {
+.title-about {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/*=========Contactos========*/
+.header-contact {
+  height: 89vh;
+  margin-top: 11vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.img-about img {
-  width: 400px;
-  height: 300px;
-  border-radius: 20px;
+.header-contact h1 {
+  font-size: 6em;
+  font-weight: 700;
+  background-image: linear-gradient(to bottom, #ff722c, #ff5500);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.header-contact p {
+  font-size: 30px;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../assets/img/bahia-de-las-aguilas-pedernales.jpg);
+  background-position: center bottom;
 }
 
+.sec-contact {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 3rem;
+  gap: 5%;
+}
+.sec-contact .content-c {
+  width: 75%;
+  height: 85vh;
+  display: flex;
+  gap: 30px;
+}
+.sec-contact .content-c div {
+  width: 850px;
+  border-radius: 10px;
+}
+.sec-contact .publicidad {
+  width: 20%;
+  height: 85vh;
+  background-color: #004C79;
+  border-radius: 10px;
+  background-image: url(../assets/img/Todo\ menos\ salmon.png);
+  background-size: 100% 100%;
+}
+
+.cont-form {
+  background-color: rgba(62, 134, 245, 0.1098039216);
+  display: flex;
+  padding: 40px 0;
+}
+.cont-form .paf-c h2 {
+  font-weight: 700;
+  text-align: center;
+}
+.cont-form .paf-c p {
+  text-align: center;
+}
+.cont-form .form-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  gap: 20px;
+}
+.cont-form .form-c .input, .cont-form .form-c .button, .cont-form .form-c textarea {
+  border: none;
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 500ms;
+}
+.cont-form .form-c .input::placeholder, .cont-form .form-c .button::placeholder, .cont-form .form-c textarea::placeholder {
+  color: #888;
+}
+.cont-form .form-c .input::placeholder, .cont-form .form-c .button::placeholder, .cont-form .form-c textarea::placeholder {
+  color: rgb(165, 165, 165);
+}
+.cont-form .form-c .input:focus, .cont-form .form-c .button:focus, .cont-form .form-c textarea:focus {
+  outline: none;
+  border: none;
+}
+.cont-form .form-c textarea {
+  height: 100px;
+  resize: none;
+}
 /*----Componentes------*/
 /*----estilos-globales----*/
 /*----Animations----*/
