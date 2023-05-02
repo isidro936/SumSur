@@ -70,7 +70,12 @@ body{
 
 section{
     height: 89vh;
+    height: 89vh;
 
+}
+
+.h-auto{
+    height: auto;
 }
 
 .h-auto{
@@ -263,10 +268,13 @@ footer{
     width: 8px;
     background-color: transparent;
     position: absolute;
+    background-color: transparent;
+    position: absolute;
   }
   
 
   ::-webkit-scrollbar-track {
+    background-color: #ff000000;
     background-color: #ff000000;
   }
   
@@ -400,6 +408,11 @@ footer{
 }
 
 /*=======Footer=======*/
+
+footer{
+    background-color: #3e87f51c;
+  
+}
 
 footer{
     background-color: #3e87f51c;
@@ -579,6 +592,7 @@ footer{
     gap: 0px;
     flex-direction: column;
  
+ 
     h1{
         color: white;
         font-family: sans-serif;
@@ -607,6 +621,7 @@ footer{
     justify-content: center;
     height: 50vh;
     .content-about{
+        width: 65%;
         width: 65%;
         display: flex;
         justify-content: space-between;
@@ -858,6 +873,7 @@ footer{
 .form-contac{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
     input{
