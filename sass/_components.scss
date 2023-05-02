@@ -16,18 +16,12 @@ p{
     list-style: disc;
     font: 16px;
 }
-
-.list{
-    list-style: disc;
-    font: 16px;
-}
 /*----------------------------Menu------------------------*/
 .nav-menu{
     display: flex;
     position: fixed;
     top:0;
     width: 100vw;
-    height: 11vh;
     height: 11vh;
     justify-content: space-around;
     gap: 7rem;
@@ -73,7 +67,6 @@ p{
             border-bottom: 2px solid $color-azul;
             border-radius: 1px;
     
-    
             
         }
         
@@ -82,7 +75,6 @@ p{
 
    
 }
-
 
 
 .logo{
@@ -279,24 +271,6 @@ p{
     
     &:hover{
         box-shadow: 0 0 15px $color-verde-esmerald;
-        transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
-        
-          
-    }
-}
-
-.btn-e{
-    font-size: 1.3rem;
-    border: none;
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem 2rem;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: all 1s;
-    
-    &:hover{
-        box-shadow: 0 0 15px #0000000b;
         transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
         
           

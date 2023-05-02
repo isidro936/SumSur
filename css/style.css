@@ -9,18 +9,12 @@ p {
   font: 16px;
 }
 
-.list {
-  list-style: disc;
-  font: 16px;
-}
-
 /*----------------------------Menu------------------------*/
 .nav-menu {
   display: flex;
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 11vh;
   height: 11vh;
   justify-content: space-around;
   gap: 7rem;
@@ -238,21 +232,6 @@ p {
 }
 .btn-a:hover, .btn-a-up:hover {
   box-shadow: 0 0 15px #3bbb55;
-  transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
-}
-
-.btn-e {
-  font-size: 1.3rem;
-  border: none;
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 10px;
-  font-weight: 500;
-  transition: all 1s;
-}
-.btn-e:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.0431372549);
   transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
 }
 
@@ -692,12 +671,6 @@ li {
   font-size: 16px;
 }
 
-.p-fino {
-  text-align: justify;
-  line-height: 29px;
-  font-size: 16px;
-}
-
 /*------Header-----*/
 .header-1 {
   width: 100%;
@@ -743,11 +716,6 @@ section {
 
 .h-auto {
   height: auto;
-  height: 89vh;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .special-ofert {
@@ -775,7 +743,6 @@ section {
   padding: 20px;
   font-size: 50px;
   font-weight: 500;
-  color: #ff722c;
   color: #ff722c;
   margin-bottom: 425px;
 }
@@ -865,7 +832,6 @@ section {
   font-size: 325px;
   font-weight: 900;
   color: #ff722c;
-  color: #ff722c;
   opacity: 0.5;
 }
 .photos .sect-phot {
@@ -919,12 +885,9 @@ footer {
   width: 8px;
   background-color: transparent;
   position: absolute;
-  background-color: transparent;
-  position: absolute;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(255, 0, 0, 0);
   background-color: rgba(255, 0, 0, 0);
 }
 
@@ -1021,7 +984,6 @@ footer {
   font-size: 40px;
   font-weight: 600;
   color: #ff722c;
-  color: #ff722c;
 }
 
 .sec-1 {
@@ -1050,10 +1012,6 @@ footer {
 }
 
 /*=======Footer=======*/
-footer {
-  background-color: rgba(62, 135, 245, 0.1098039216);
-}
-
 footer {
   background-color: rgba(62, 135, 245, 0.1098039216);
 }
@@ -1242,7 +1200,6 @@ footer {
   height: 50vh;
 }
 .sec-about .content-about {
-  width: 65%;
   width: 65%;
   display: flex;
   justify-content: space-between;
@@ -1465,7 +1422,6 @@ footer {
 .form-contac {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
@@ -1501,74 +1457,7 @@ footer {
   background-size: cover;
 }
 
-.sec-contact {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  padding: 0 3rem;
-  gap: 5%;
-}
-.sec-contact .content-c {
-  width: 75%;
-  height: 85vh;
-  display: flex;
-  gap: 30px;
-}
-.sec-contact .content-c div {
-  width: 850px;
-  border-radius: 10px;
-}
-.sec-contact .publicidad {
-  width: 20%;
-  height: 85vh;
-  background-color: #004C79;
-  border-radius: 10px;
-  background-image: url(../assets/img/Todo\ menos\ salmon.png);
-  background-size: 100% 100%;
-}
-
-.cont-form {
-  background-color: rgba(62, 134, 245, 0.1098039216);
-  display: flex;
-  padding: 40px 0;
-}
-.cont-form .paf-c h2 {
-  font-weight: 700;
-  text-align: center;
-}
-.cont-form .paf-c p {
-  text-align: center;
-}
-.cont-form .form-c {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
-  gap: 20px;
-}
-.cont-form .form-c .input, .cont-form .form-c .button, .cont-form .form-c textarea {
-  border: none;
-  width: 70%;
-  padding: 10px;
-  border-radius: 5px;
-  transition: all 500ms;
-}
-.cont-form .form-c .input::placeholder, .cont-form .form-c .button::placeholder, .cont-form .form-c textarea::placeholder {
-  color: #888;
-}
-.cont-form .form-c .input::placeholder, .cont-form .form-c .button::placeholder, .cont-form .form-c textarea::placeholder {
-  color: rgb(165, 165, 165);
-}
-.cont-form .form-c .input:focus, .cont-form .form-c .button:focus, .cont-form .form-c textarea:focus {
-  outline: none;
-  border: none;
-}
-.cont-form .form-c textarea {
-  height: 100px;
-  resize: none;
-}
 /*----Componentes------*/
 /*----estilos-globales----*/
-
 
 /*# sourceMappingURL=style.css.map */
