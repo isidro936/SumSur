@@ -1,8 +1,9 @@
 $color-azul-oscuro:#004C79;
 $color-verde-esmerald:#3bbb55;
 $color-verde-bg:#0e880a;
-$color-verde-texto:#0e880a57;
+$color-verde-texto:#0e880a8d;
 $color-atardecer:#F46B27;
+$color-atardecer-oscuro:#f45100a4;
 $color-azul:#3E86F5;
 $color-rosa-text: #0055ff;
 $color-rosa:#f1f1fd;
@@ -10,14 +11,19 @@ $color-amarillo:#FFC107;
 p{
     margin: 0;
 }
+
+.list{
+    list-style: disc;
+    font: 16px;
+}
 /*----------------------------Menu------------------------*/
 .nav-menu{
     display: flex;
     position: fixed;
     top:0;
     width: 100vw;
+    height: 11vh;
     justify-content: space-around;
-    flex-direction: row;
     gap: 7rem;
     padding: 5px ;
     align-items: center;
@@ -60,6 +66,7 @@ p{
         .active{
             border-bottom: 2px solid $color-azul;
             border-radius: 1px;
+    
             
         }
         
@@ -68,6 +75,7 @@ p{
 
    
 }
+
 
 .logo{
     font-weight: 500;
@@ -269,6 +277,24 @@ p{
     }
 }
 
+.btn-e{
+    font-size: 1.3rem;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 1s;
+    
+    &:hover{
+        box-shadow: 0 0 15px #0000000b;
+        transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
+        
+          
+    }
+}
+
 .btn-a-up{
   @extend .btn-a;
   background-color: $color-atardecer;
@@ -288,7 +314,15 @@ p{
 }
 
 .color-verde-bg{
-    background-color: $color-verde-esmerald;
+    background-color: $color-verde-bg;
+}
+
+.color-verde-claro{
+    color: #00ff33;
+}
+
+.color-verde-claro-bg{
+    background-color: #00ff33;
 }
 
 .color-azul{
@@ -329,8 +363,9 @@ p{
     }
     img{
         width: 100%;
-        height: 209px;
+        height: 90%;
         border-radius: 10px;
+        object-fit: cover;
     }
   
 }
@@ -373,17 +408,22 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
-    padding:30px ;
-    background: url(https://www.delazonaoriental.net/wp-content/uploads/2021/01/flamenco.jpg);
+    align-items: start;
+    padding:60px ;
+    background:linear-gradient(to right, #00000056 , #00000056) , url(../assets/img/hermosa-playa-tropical-mar.jpg);
     background-size: cover;
+    background-position: center bottom;
     opacity: 0.9;
+
     div{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
         width: 60vw;
+        p{
+            width:70%;
+        }
         a{
             align-self: flex-start;
         }
@@ -392,50 +432,67 @@ p{
 
 .destino-descrip-sub-2{
     @extend .destino-descrip-sub;
-    color: black;
-    flex-direction: row;
-    align-items: center;
-    gap: 3rem;
-    background-image: none;
-    background-color: transparent;
-    .img-ban{
-        width: 500px;
-        height: 350px;
-        border-radius: 30px;
-        background-color: black;
-        background: url(https://mediospanorama.com/wp-content/uploads/2020/05/Iguana-Rinoceronte-e1589638264728-850x560.jpg) no-repeat;
-        background-size: cover;
-        background-position:center bottom;
+    background: linear-gradient(to right, #0000007a, #0000007a), url(../assets/img/hermoso-paisaje-rio-rodeado-vegetacion-dia.jpg);
+    background-size: cover;
+    background-position: center center;
+    align-items: end;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        width: 80%;
+        p{
+            width:70%;
+            text-align: end;
+        }
+        a{
+            align-self: flex-end;
+        }
     }
-
 }
 
 .promo-ban{
-    height: 80vh;
-    background-color: transparent;
+    height: 90vh;
+    background-color: #f46b271c;
 }
 
-//----------------------- Galeria
-.container-g{
-    display: flex;
-    align-items: center;
-    height: 100vh;
+/*----------------------- Galeria------------------*/
+
+.gal-content-1{
+    height: auto;
+    padding: 30px 0;
 }
-.photo-g{
-    height: 300px;
-    background-color: $color-atardecer;
-    flex: 1;
-    transition: 0.3s;
-    margin: 0 5px;
-    &:hover{
-        flex: 3;
-        background-color: $color-atardecer;
+.gal-2{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    width: 95%;
+    margin-left: 2.5%;
+    
+    div{
+        height: auto;
+        background-color: $color-azul;
+        border-radius:5px ;
+        img{
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+        }
+
     }
+}
+
+#foto-1{
+    height:  calc(200% + 10px);
+    width: calc(2*285px + 10px);
 }
 /*=============forms===========*/
 .content-form{
     position: absolute;
-    top: 85vh;
+    top: 70vh;
     .title-form{
         background-color: white;
         width: 20vw;
@@ -577,3 +634,109 @@ li{
 
     
 }
+
+.img-about{
+    height: 90vh;
+    width: 30%;
+    border-radius: 10px;
+    background-image: url(https://img.freepik.com/foto-gratis/turismo-cultural_23-2147641193.jpg?size=626&ext=jpg&ga=GA1.1.63583747.1672681572&semt=ais);
+    background-size:cover ;
+    background-position: center;
+    margin-right: 30px;
+}
+
+.img-can{
+    width: 180px;
+    height: 180px;
+}
+
+#img{
+    height: 500px;
+    width: 100%;
+}
+
+/*=============Tarjetas=============*/
+
+.tarjet{
+    width: 100.3vw;
+    height: 200px;
+    background-color: #3e87f51c;
+    
+    .feed-tarjet{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font-weight: 600;
+            color: $color-azul-oscuro;
+        }
+    }
+}
+
+#Hours{
+    font-size: 25px;
+}
+
+.sec-social{
+    height: 50vh;
+    padding: 30px;
+    div{
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            color: $color-azul;
+        }
+    }
+}
+
+.social{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    height: 100%;
+    padding: 0 3rem;
+
+    .social-links{        
+        width: 30%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        i{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+.link1{
+    i{
+        color: #00acee;
+    }
+}
+
+.link2{
+    i{
+    
+    background: linear-gradient(135deg, #feda75 0%, #fa7e1e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+          
+    }
+}
+
+.link3{
+    i{
+    
+   color: #3b5998;
+          
+    }
+}
+

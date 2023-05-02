@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
 p {
   margin: 0;
+}
+
+.list {
+  list-style: disc;
+  font: 16px;
 }
 
 /*----------------------------Menu------------------------*/
@@ -9,8 +15,8 @@ p {
   position: fixed;
   top: 0;
   width: 100vw;
+  height: 11vh;
   justify-content: space-around;
-  flex-direction: row;
   gap: 7rem;
   padding: 5px;
   align-items: center;
@@ -229,6 +235,21 @@ p {
   transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
 }
 
+.btn-e {
+  font-size: 1.3rem;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 1s;
+}
+.btn-e:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.0431372549);
+  transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
+}
+
 .btn-a-up {
   background-color: #F46B27;
   box-shadow: 0 0 6px #F46B27;
@@ -244,7 +265,15 @@ p {
 }
 
 .color-verde-bg {
-  background-color: #3bbb55;
+  background-color: #0e880a;
+}
+
+.color-verde-claro {
+  color: #00ff33;
+}
+
+.color-verde-claro-bg {
+  background-color: #00ff33;
 }
 
 .color-azul {
@@ -286,8 +315,9 @@ p {
 }
 .card img {
   width: 100%;
-  height: 209px;
+  height: 90%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .descrip-card {
@@ -327,10 +357,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
-  padding: 30px;
-  background: url(https://www.delazonaoriental.net/wp-content/uploads/2021/01/flamenco.jpg);
+  align-items: start;
+  padding: 60px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.337254902), rgba(0, 0, 0, 0.337254902)), url(../assets/img/hermosa-playa-tropical-mar.jpg);
   background-size: cover;
+  background-position: center bottom;
   opacity: 0.9;
 }
 .destino-descrip-sub div, .destino-descrip-sub-2 div {
@@ -340,55 +371,74 @@ p {
   align-items: start;
   width: 60vw;
 }
+.destino-descrip-sub div p, .destino-descrip-sub-2 div p {
+  width: 70%;
+}
 .destino-descrip-sub div a, .destino-descrip-sub-2 div a {
   align-self: flex-start;
 }
 
 .destino-descrip-sub-2 {
-  color: black;
-  flex-direction: row;
-  align-items: center;
-  gap: 3rem;
-  background-image: none;
-  background-color: transparent;
-}
-.destino-descrip-sub-2 .img-ban {
-  width: 500px;
-  height: 350px;
-  border-radius: 30px;
-  background-color: black;
-  background: url(https://mediospanorama.com/wp-content/uploads/2020/05/Iguana-Rinoceronte-e1589638264728-850x560.jpg) no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4784313725), rgba(0, 0, 0, 0.4784313725)), url(../assets/img/hermoso-paisaje-rio-rodeado-vegetacion-dia.jpg);
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
+  align-items: end;
+}
+.destino-descrip-sub-2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 80%;
+}
+.destino-descrip-sub-2 div p {
+  width: 70%;
+  text-align: end;
+}
+.destino-descrip-sub-2 div a {
+  align-self: flex-end;
 }
 
 .promo-ban {
-  height: 80vh;
-  background-color: transparent;
+  height: 90vh;
+  background-color: rgba(244, 107, 39, 0.1098039216);
 }
 
-.container-g {
-  display: flex;
-  align-items: center;
-  height: 100vh;
+/*----------------------- Galeria------------------*/
+.gal-content-1 {
+  height: auto;
+  padding: 30px 0;
 }
 
-.photo-g {
-  height: 300px;
-  background-color: #F46B27;
-  flex: 1;
-  transition: 0.3s;
-  margin: 0 5px;
+.gal-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
+  grid-auto-rows: 200px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  width: 95%;
+  margin-left: 2.5%;
 }
-.photo-g:hover {
-  flex: 3;
-  background-color: #F46B27;
+.gal-2 div {
+  height: auto;
+  background-color: #3E86F5;
+  border-radius: 5px;
+}
+.gal-2 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#foto-1 {
+  height: calc(200% + 10px);
+  width: 580px;
 }
 
 /*=============forms===========*/
 .content-form {
   position: absolute;
-  top: 85vh;
+  top: 70vh;
 }
 .content-form .title-form {
   background-color: white;
@@ -518,6 +568,96 @@ li {
   font-size: 15px;
 }
 
+.img-about {
+  height: 90vh;
+  width: 30%;
+  border-radius: 10px;
+  background-image: url(https://img.freepik.com/foto-gratis/turismo-cultural_23-2147641193.jpg?size=626&ext=jpg&ga=GA1.1.63583747.1672681572&semt=ais);
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px;
+}
+
+.img-can {
+  width: 180px;
+  height: 180px;
+}
+
+#img {
+  height: 500px;
+  width: 100%;
+}
+
+/*=============Tarjetas=============*/
+.tarjet {
+  width: 100.3vw;
+  height: 200px;
+  background-color: rgba(62, 135, 245, 0.1098039216);
+}
+.tarjet .feed-tarjet {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tarjet .feed-tarjet h3 {
+  font-weight: 600;
+  color: #004C79;
+}
+
+#Hours {
+  font-size: 25px;
+}
+
+.sec-social {
+  height: 50vh;
+  padding: 30px;
+}
+.sec-social div h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3E86F5;
+}
+
+.social {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+.social .social-links {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social .social-links i {
+  font-size: 30px;
+}
+.social .social-links p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.link1 i {
+  color: #00acee;
+}
+
+.link2 i {
+  background: linear-gradient(135deg, #feda75 0%, #fa7e1e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.link3 i {
+  color: #3b5998;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -525,16 +665,33 @@ li {
   box-sizing: border-box;
 }
 
+.p-fino {
+  text-align: justify;
+  line-height: 29px;
+  font-size: 16px;
+}
+
 /*------Header-----*/
+.header-1 {
+  width: 100%;
+  height: 89vh;
+  margin-top: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   background-image: url("../assets/img/cap-cana_003.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 97%;
+  width: 97%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
 }
 .header h1 {
   color: white;
@@ -554,7 +711,11 @@ body {
 }
 
 section {
-  height: 100vh;
+  height: 89vh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .special-ofert {
@@ -582,7 +743,7 @@ section {
   padding: 20px;
   font-size: 50px;
   font-weight: 500;
-  color: #F46B27;
+  color: #ff722c;
   margin-bottom: 425px;
 }
 
@@ -621,14 +782,14 @@ section {
 }
 .opinion .messa .user {
   width: 100px;
-  height: 90px;
+  height: 100px;
   padding: 20px;
   background-color: #ffffff;
   box-sizing: content-box;
   border-radius: 45%;
   position: absolute;
   margin-top: 270px;
-  border-bottom: 1px solid rgb(182, 182, 182);
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.178);
 }
 .opinion .messa .user img {
   width: 100%;
@@ -670,7 +831,7 @@ section {
 .photos .p-title h2 {
   font-size: 325px;
   font-weight: 900;
-  color: #F46B27;
+  color: #ff722c;
   opacity: 0.5;
 }
 .photos .sect-phot {
@@ -722,10 +883,12 @@ footer {
 
 ::-webkit-scrollbar {
   width: 8px;
+  background-color: transparent;
+  position: absolute;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -820,11 +983,10 @@ footer {
 .clasificacion-destino .clasificacion-destino-sub h3 {
   font-size: 40px;
   font-weight: 600;
-  color: #F46B27;
+  color: #ff722c;
 }
 
 .sec-1 {
-  background-color: white;
   padding: 30px;
   border-radius: 10px;
   display: flex;
@@ -850,6 +1012,10 @@ footer {
 }
 
 /*=======Footer=======*/
+footer {
+  background-color: rgba(62, 135, 245, 0.1098039216);
+}
+
 .footer-bott {
   display: flex;
   align-items: center;
@@ -910,8 +1076,92 @@ footer {
 }
 
 /*=========================Galeria=================================*/
-.header-galery {
+.header-galery2 {
+  height: 89vh;
+  margin-top: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-galery2 .header-galery {
+  width: 95%;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.header-galery2 video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-galery2 .header-sec {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6509803922), transparent 70%);
+  position: absolute;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-galery2 .header-sec h1 {
+  font-size: 3em;
+  font-weight: 600;
+  background-position: center center;
+}
+.header-galery2 .header-sec h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  background-position: center center;
+}
+.header-galery2 .header-sec p {
+  width: 50%;
+  text-align: justify;
+}
+
+.gal-1 {
+  width: 95%;
+  height: 100%;
+  margin-left: 2.5%;
+  display: flex;
+}
+
+.content-gal1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content-gal1 div {
+  width: 45%;
+  height: 45%;
+  background-color: #53AE65;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.content-gal1 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-gal2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.content-gal2 h2 {
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
 }
 
 /*=============Sobre nosotros==============*/
@@ -950,30 +1200,265 @@ footer {
   height: 50vh;
 }
 .sec-about .content-about {
-  width: 70%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
-  width: 70%;
 }
 
-.img-about {
+.title-about {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/*=========Contactos========*/
+.header-contact {
+  height: 89vh;
+  margin-top: 11vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-contact .header-contact-sub {
+  width: 95%;
+  height: 90%;
+  background: linear-gradient(to right, #ff722c 10%, transparent 90%), url(../assets/img/Casa-bonita.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.img-about img {
-  width: 400px;
-  height: 300px;
-  border-radius: 20px;
+.header-contact .header-contact-sub h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+  background-position: center center;
+}
+.header-contact .header-contact-sub #p {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.header-contact .header-contact-sub p {
+  width: 50%;
+  color: white;
+  text-align: justify;
+}
+
+.sec-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 3rem;
+}
+.sec-contact .content-c {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.sec-contact .content-c div {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.publicidad {
+  width: 20%;
+  height: 85vh;
+  background-color: #004C79;
+  border-radius: 10px;
+  background-image: url(../assets/img/Todo\ menos\ salmon.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+#icon-1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.316);
+  transform: rotate(-20deg);
+  transition: all 1000ms;
+}
+#icon-1:hover {
+  transform: rotate(360deg);
+}
+
+#icon-2 {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.316);
+  transition: all 1000ms;
+}
+#icon-2:hover {
+  animation: rotate 2s;
+}
+
+#icon-3 {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.316);
+  transition: all 100ms;
+}
+#icon-3:hover {
+  animation: muve 2s;
+}
+
+@keyframes muve {
+  10% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(-30deg) translateY(-20px);
+  }
+  100% {
+    transform: rotateY(360deg) translate(0px);
+  }
+}
+/*================Formularios contactos===========*/
+.cont-form {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
+}
+.cont-form .paf-c h2 {
+  font-weight: 700;
+  text-align: center;
+}
+.cont-form .paf-c p {
+  text-align: center;
+}
+.cont-form .form-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  gap: 20px;
+}
+.cont-form .form-c .input, .cont-form .form-c textarea {
+  border: 1px solid rgba(62, 134, 245, 0.8431372549);
+  width: 50vw;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 500ms;
+  color: #3E86F5;
+}
+.cont-form .form-c .input::placeholder, .cont-form .form-c textarea::placeholder {
+  color: #3E86F5;
+}
+.cont-form .form-c .input:focus, .cont-form .form-c textarea:focus {
+  outline: none;
+  border: 1px solid rgba(255, 114, 44, 0.8431372549);
+  color: #3E86F5;
+}
+.cont-form .form-c textarea {
+  height: 100px;
+  resize: none;
+}
+.cont-form .form-c .button {
+  width: 50vw;
+}
+
+.contac-sec {
+  height: 120vh;
+}
+
+.content-c1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 6rem;
+}
+.content-c1 i {
+  font-size: 50px;
+  color: #3E86F5;
+}
+
+.content-p {
+  text-align: center;
+  width: 70%;
+}
+.content-p h2 {
+  font-weight: 700;
+  color: #3E86F5;
+}
+.content-p p {
+  text-align: justify;
+}
+
+.form-contac {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.form-contac input {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(62, 135, 245, 0.8431372549);
+  width: 60%;
+  color: #3E86F5;
+}
+.form-contac input::placeholder {
+  color: #3E86F5;
+}
+.form-contac input:focus {
+  outline: none;
+  border: 2px solid rgba(62, 135, 245, 0.8431372549);
+  color: #3E86F5;
+}
+.form-contac input:active {
+  border: 2px solid rgba(62, 135, 245, 0.8431372549);
+  color: #3E86F5;
+}
+.form-contac button {
+  width: 10%;
+}
+
+/*==============Actividades PAGES===========*/
+.header-activities {
+  width: 100vw;
+  height: 89vh;
+  margin-top: 11vh;
+  background: url(https://img.freepik.com/foto-gratis/madre-e-hijo-al-aire-libre-al-atardecer-espacio-copia_1249-526.jpg?w=900&t=st=1682905009~exp=1682905609~hmac=7bc7a369f5bbc58fdc137ac31e0ba2a06ce83cad4667ce896a26e6336cecf7a7);
+  background-size: cover;
 }
 
 /*----Componentes------*/
 /*----estilos-globales----*/
-/*----Animations----*/
+
 
 /*# sourceMappingURL=style.css.map */

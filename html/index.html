@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,87 +13,82 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- estilos -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../assets/logo sumsur.ico" type="image/x-icon">
-    
-
-    
+    <link rel="shortcut icon" href="../assets/logo sumsur.ico" type="image/x-icon">  
 </head>
 <body>
     <nav class="nav-menu">
-            <h2 class="logo">SumSur</h2>
-        
-        
+        <h2 class="logo">SumSur</h2>
         <ul class="menu-sm">
             <li id="btn-regis"><a href="login.html" id="btn-regis">Registrate</a></li>
             <li><a href="../html/Nosotros.html">Nosotros</a></li>
-            <li><a href="">Contactos</a></li>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Actividades</a></li>
+            <li><a href="Contactos.html">Contactos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="Actividades.html">Actividades</a></li>
             <li><a href="Destinos.html">Destinos</a></li>
-            <li class="active"><a class="active" href="">Inicio</a></li>
+            <li><a class="active" href="">Inicio</a></li>
         </ul>
-
     </nav>
+    <header class="header-1">
+        <div class="header">
+            <h1>SUMSUR</h1>
 
-    <header class="header">
-        <h1>SUMSUR</h1>
-
-        <div class="content-form">
-            <div class="title-form">
-                <div class="div1">
-                    <p><i class="bi bi-building-fill"></i> Hotel</p>
+            <div class="content-form" data-aos="fade-up">
+                <div class="title-form">
+                    <div class="div1">
+                        <p><i class="bi bi-building-fill"></i> Hotel</p>
+                    </div>
+                    <div class="div">
+                        <p><i class="bi bi-airplane-fill"></i> Vuelos</p>
+                    </div>
                 </div>
-                <div class="div">
-                    <p><i class="bi bi-airplane-fill"></i> Vuelos</p>
-                </div>
-            </div>
-            <div class="form">
-                
-              <div class="form1 -f">
+                <div class="form">
+                    
+                <div class="form1 -f">
 
-                <div class="cont-f1">
-                    <p>Destino</p>
+                    <div class="cont-f1">
+                        <p>Destino</p>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Playas
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                    </div>
+                    <i class="bi bi-building-fill color-atardecer"></i>
+                    <div class="cont-f1">
+                        <p>Hotel</p>
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Playas
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                        </ul>
-                </div>
-                <i class="bi bi-building-fill color-atardecer"></i>
-                <div class="cont-f1">
-                    <p>Hotel</p>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Alojamiento
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                        </ul>
-                </div>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alojamiento
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                    </div>
 
-              </div> 
+                </div> 
 
-              <div class="form2 -f">
+                <div class="form2 -f">
 
-                <div class="cont-f1">
-                    <p>Entrada</p>
-                    <input type="date" class="input">
+                    <div class="cont-f1">
+                        <p>Entrada</p>
+                        <input type="date" class="input">
+                    </div>
+                    <i class="bi bi-calendar-event-fill color-atardecer"></i>
+                    <div class="cont-f1">
+                        <p>Salida</p>
+                        <input type="date" class="input">
+                    </div>
+
                 </div>
-                <i class="bi bi-calendar-event-fill color-atardecer"></i>
-                <div class="cont-f1">
-                    <p>Salida</p>
-                    <input type="date" class="input">
+                <div class="search">
+                    <i class="bi bi-search"></i>
                 </div>
 
-              </div>
-              <div class="search">
-                <i class="bi bi-search"></i>
-              </div>
-
+                </div>
             </div>
         </div>
     </header>
@@ -120,18 +115,14 @@
                     <br>
                     <button class="btn-normal color-atardecer-bg">Contactanos</button>
                   
-                </div>
-
-                
+                </div> 
             </div>
         </section>
         <section class="sec-map">
-
             <div class="map" data-aos="fade-up"
             data-aos-anchor-placement="top-center"
             data-aos-duration="1000">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d969534.4152424763!2d-71.87078107416255!3d18.33155304289295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdestinos%20turisticos%20del%20suroeste%20de%20republica%20dominicana!5e0!3m2!1ses-419!2sdo!4v1681649490027!5m2!1ses-419!2sdo" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d969534.4152424763!2d-71.87078107416255!3d18.33155304289295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdestinos%20turisticos%20del%20suroeste%20de%20republica%20dominicana!5e0!3m2!1ses-419!2sdo!4v1681649490027!5m2!1ses-419!2sdo" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
             </div>
             <div class="map-title" data-aos="fade-up"
             data-aos-duration="1500">
@@ -146,16 +137,15 @@
        
             <br>
             <div class="opinion">
-                <h2>Reseñas</h2>
                 <div class="messa">
 
                     <div class="text-messa">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quidem sapiente asperiores labore veritatis, iure dicta eveniet est! Dolorem fugiat numquam reiciendis quam nam modi consequatur nulla vel repellendus fugit!</p>
+                        <p>Excelente página web, muy fácil de navegar y con información detallada. Me encanta la variedad de destinos y opciones de actividades. ¡Altamente recomendada!</p>
                         <br>
                         <span>-Diego</span>
                     </div>
                     <div class="user">
-                        <img src="../assets/img/5.jpg" alt="user">
+                        <img src="../assets/img/5.png" alt="user">
                         <div class="star">
                             <span><i class="bi bi-star-fill"></i>4.5</span>
                         </div>
@@ -165,14 +155,14 @@
                 <div class="messa">
 
                     <div class="text-messa">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quidem sapiente asperiores labore veritatis, iure dicta eveniet est! Dolorem fugiat numquam reiciendis quam nam modi consequatur nulla vel repellendus fugit!</p>
+                        <p>Perdón, me equivoque de pagina. Esta si que esta horrible.</p>
                         <br>
                         <span>-Diego</span>
                     </div>
                     <div class="user">
-                        <img src="../assets/img/5.jpg" alt="user">
+                        <img src="../assets/img/5.png" alt="user">
                         <div class="star">
-                            <span><i class="bi bi-star-fill"></i>4.5</span>
+                            <span><i class="bi bi-star-fill"></i>0.5</span>
                         </div>
                     </div>
 
@@ -190,7 +180,7 @@
         </section>
         
     </main>
-    <footer class="py-5 border-top">
+    <footer class="py-5 border-top footer-g">
         <div class="row">
           <div class="col-6 col-md-2 mb-3">
             <h5>Destinos</h5>
@@ -215,12 +205,11 @@
           <div class="col-6 col-md-2 mb-3">
             <h5>Nosotros</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SumSur</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Historia</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Misión y visión</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Más</a></li>
-
-            </ul>
+                <li class="nav-item mb-2"><a href="Nosotros.html#sumsur" class="nav-link p-0 text-body-secondary">SumSur</a></li>
+                <li class="nav-item mb-2"><a href="Nosotros.html#historia" class="nav-link p-0 text-body-secondary">Historia</a></li>
+                <li class="nav-item mb-2"><a href="Nosotros.html#valores" class="nav-link p-0 text-body-secondary">Valores</a></li>
+                <li class="nav-item mb-2"><a href="Nosotros.html#misi" class="nav-link p-0 text-body-secondary">Misión y visión</a></li>
+              </ul>
           </div>
     
           <div class="col-md-5 offset-md-1 mb-3">
