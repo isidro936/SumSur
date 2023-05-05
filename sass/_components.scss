@@ -1,6 +1,6 @@
 $color-azul-oscuro:#004C79;
 $color-verde-esmerald:#3bbb55;
-$color-verde-bg:#0e880a;
+$color-verde-bg:#15d20e;
 $color-verde-texto:#0e880a8d;
 $color-atardecer:#F46B27;
 $color-atardecer-oscuro:#f45100a4;
@@ -40,7 +40,7 @@ p{
             color: white;
             padding: 0.5rem;
             font-size: 15px;
-            border-radius:10px ;
+            border-radius:5px ;
             transition: all 500ms;
             &:hover{
                 transform: scale(1.1);
@@ -55,19 +55,23 @@ p{
             font-weight: 500;
             font-size: 15px;
             padding-top: 0.5rem;
+            transition: all 500ms;
             
         
             a{
             text-decoration: none;
             color: $color-azul;
+            
+
+            &:hover{
+                color: $color-verde-esmerald;
+            }
             }
         }
 
         .active{
             border-bottom: 2px solid $color-azul;
             border-radius: 1px;
-    
-            
         }
         
     }
@@ -172,47 +176,55 @@ p{
     align-items: center;
     height: 70vh;
     .ban{
-        width: 80%;
-        height: 75%;
-        background-color: #3E86F5;
-        border-radius: 50px;
-        background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.268) 0%, rgba(10, 10, 10, 0.268) 100%), url(../assets/img/al-atardecer-playa-tropical-mar-palmera-coco.jpg);
+        width: 95%;
+        height: 95%;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.488) 0%, rgba(10, 10, 10, 0.492) 100%), url(../assets/img/vista-anterior-salmon-sobre-tabla-madera\ \(1\).jpg);
         background-position: center bottom;
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 3rem;
-        flex-direction: column;
-        h2{
-            color: white;
-            text-align: center;
-            width: 80%;
-            font-weight: 600;
-            font-size: 40px;
+        padding: 50px;
+        .title-ban{
+            width: 65%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+            h2{
+                color: #fbfaf9;
+                font-size: 3rem;
+                font-weight: 600;
+            }
+            p{
+                margin-top: -30px;
+                color: white;
+                width: 78%;
+                text-align: justify;
+            }
+        }
+        .logo-3{
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 300px;
+                position: absolute;
+               
+            }
+            p{
+                color: white;
+                position: relative;
+                top: 45px;
+            }
         }
     }
 }
 
-.relax{
-    font-size: 10px;
-    color: $color-rosa-text;
-    background-color: $color-rosa;
-    border-radius: 50px;
-    height: 15px;
-    width: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.adventure{
-    @extend .relax;
-    background-color: #f1f1fd;
-    color: $color-verde-bg;
-    width: 55px;
-    
-}
 
 .text-shadow{
     text-shadow: 0 0 10px white;;
@@ -237,21 +249,19 @@ p{
           
     }
 }
-.btn-secundario{
+.btn-salmon{
     font-size: 20px;
     border: none;
-    color: $color-azul;
+    color: white;
     text-decoration: none;
-    background-color: white;
-    padding: 0.5rem 1rem;
-    box-shadow: 0 0 6px #ffffff;
-    border-radius: 10px;
-    font-weight: 500;
+    background-color: #F46437;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
     transition: all 1s;
     
     &:hover{
-        box-shadow: 0 0 10px white;
-        transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
+        transform:rotate(-2deg) scale(1.1);
           
           
     }
@@ -262,10 +272,8 @@ p{
     border: none;
     text-decoration: none;
     color: white;
-    background-color: $color-verde-esmerald;
-    padding: 0.5rem 2rem;
-    box-shadow: 0 0 6px $color-verde-esmerald;
-    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
     font-weight: 500;
     transition: all 1s;
     
@@ -294,19 +302,6 @@ p{
           
     }
 }
-
-.btn-a-up{
-  @extend .btn-a;
-  background-color: $color-atardecer;
-  box-shadow: 0 0 6px $color-atardecer;
-    
-    &:hover{
-        box-shadow: 0 0 15px $color-atardecer;
-        transform:rotate3d(10 0 1000 1deg)  scale(1.1);
-        
-          
-    }
-}
 /*========================Colores=======================*/
 
 .color-verde{
@@ -314,7 +309,7 @@ p{
 }
 
 .color-verde-bg{
-    background-color: $color-verde-bg;
+    background-color: $color-verde-esmerald;
 }
 
 .color-verde-claro{
@@ -367,6 +362,12 @@ p{
         border-radius: 10px;
         object-fit: cover;
     }
+    .img{
+        width: 100%;
+        height: 70%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
   
 }
 
@@ -376,6 +377,11 @@ p{
 
     h3{
         font-size: 20px;
+        font-weight: 600;
+    }
+    .h3-little{
+        font-size: 14px;
+        font-weight: 600;
     }
     .descrip-card-sub{
         display: flex;
@@ -452,9 +458,87 @@ p{
     }
 }
 
+.destino-descrip-sub-3{
+    @extend .destino-descrip-sub-2;
+    background:linear-gradient(to right, #00000058, #0000005f) , url(../assets/img/florayfauna.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.destino-descrip-sub-4{
+    @extend .destino-descrip-sub;
+    background:linear-gradient(to right, #00000071, #00000061), url(../assets/img/Casa-bonita.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    div{
+        h1{
+            width: 130%;
+        }
+    }
+}
+
+.destino-descrip-sub-5{
+    background: linear-gradient(to right,#0000007c,#0000007c), url(../assets/img/actividades.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 3rem;
+            color: #00e82e;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+.destino-descrip-sub-6{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding:60px ;
+    background:linear-gradient(to right, #00000075 , #0000007a) , url(../assets/img/Turismo.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 60vw;
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            width:70%;
+        }
+        a{
+            align-self: flex-start;
+        }
+    }
+
+}
+
 .promo-ban{
     height: 90vh;
-    background-color: #f46b271c;
 }
 
 /*----------------------- Galeria------------------*/
@@ -471,11 +555,13 @@ p{
     grid-auto-flow: dense;
     width: 95%;
     margin-left: 2.5%;
+  
     
     div{
         height: auto;
         background-color: $color-azul;
         border-radius:5px ;
+          overflow: hidden;
         img{
             width: 100%;
             height:100%;
@@ -497,8 +583,8 @@ p{
         background-color: white;
         width: 20vw;
         height: 50px;
-        border-top-right-radius:20px ; 
-        border-top-left-radius: 20px;
+        border-top-right-radius:10px ; 
+        border-top-left-radius: 10px;
         box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.202);
         display: flex;
         align-items: center;
@@ -523,7 +609,7 @@ p{
     width: 75vw;
     height: 150px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     border-top-left-radius:0px ;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.202);
     display: flex;
@@ -600,9 +686,9 @@ li{
 
 /*===========Mapa=============*/
 .map{
-    width: 80%;
-    height: 70%;
-    border-radius: 50px;
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.149);
     position:absolute;
@@ -617,8 +703,8 @@ li{
     background-color: rgb(255, 255, 255);
     position: relative;
     width: 35%;
-    height: 25%;
-    border-radius: 25px;
+    height: auto;
+    border-radius: 5px;
     top: 100px;
     right: 250px;
     padding: 20px;
@@ -629,6 +715,7 @@ li{
     span{
         padding-top: 100px;
         font-size: 15px;
+        text-align: justify;
     }
 
 
@@ -739,4 +826,47 @@ li{
           
     }
 }
+
+/*==============Actividades============*/
+
+.activities-descrip{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img{
+    width: 40%;
+    height: 70%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    .activiti-1{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 60px;
+        h2{
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+.activities-descrip-2{
+    @extend .activities-descrip;
+    flex-direction: row-reverse;
+
+}
+
 

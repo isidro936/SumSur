@@ -33,7 +33,7 @@ p {
   color: white;
   padding: 0.5rem;
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: all 500ms;
 }
 .nav-menu .menu-sm #btn-regis:hover {
@@ -47,10 +47,14 @@ p {
   font-weight: 500;
   font-size: 15px;
   padding-top: 0.5rem;
+  transition: all 500ms;
 }
 .nav-menu .menu-sm li a {
   text-decoration: none;
   color: #3E86F5;
+}
+.nav-menu .menu-sm li a:hover {
+  color: #3bbb55;
 }
 .nav-menu .menu-sm .active {
   border-bottom: 2px solid #3E86F5;
@@ -141,43 +145,51 @@ p {
   height: 70vh;
 }
 .banner .ban {
-  width: 80%;
-  height: 75%;
-  background-color: #3E86F5;
-  border-radius: 50px;
-  background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.268) 0%, rgba(10, 10, 10, 0.268) 100%), url(../assets/img/al-atardecer-playa-tropical-mar-palmera-coco.jpg);
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.488) 0%, rgba(10, 10, 10, 0.492) 100%), url(../assets/img/vista-anterior-salmon-sobre-tabla-madera\ \(1\).jpg);
   background-position: center bottom;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  padding: 50px;
+}
+.banner .ban .title-ban {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+.banner .ban .title-ban h2 {
+  color: #fbfaf9;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.banner .ban .title-ban p {
+  margin-top: -30px;
+  color: white;
+  width: 78%;
+  text-align: justify;
+}
+.banner .ban .logo-3 {
+  width: 35%;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
 }
-.banner .ban h2 {
+.banner .ban .logo-3 img {
+  width: 300px;
+  position: absolute;
+}
+.banner .ban .logo-3 p {
   color: white;
-  text-align: center;
-  width: 80%;
-  font-weight: 600;
-  font-size: 40px;
-}
-
-.relax, .adventure {
-  font-size: 10px;
-  color: #0055ff;
-  background-color: #f1f1fd;
-  border-radius: 50px;
-  height: 15px;
-  width: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.adventure {
-  background-color: #f1f1fd;
-  color: #0e880a;
-  width: 55px;
+  position: relative;
+  top: 45px;
 }
 
 .text-shadow {
@@ -201,36 +213,32 @@ p {
   transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
 }
 
-.btn-secundario {
+.btn-salmon {
   font-size: 20px;
   border: none;
-  color: #3E86F5;
+  color: white;
   text-decoration: none;
-  background-color: white;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 0 6px #ffffff;
-  border-radius: 10px;
-  font-weight: 500;
+  background-color: #F46437;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
   transition: all 1s;
 }
-.btn-secundario:hover {
-  box-shadow: 0 0 10px white;
-  transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
+.btn-salmon:hover {
+  transform: rotate(-2deg) scale(1.1);
 }
 
-.btn-a, .btn-a-up {
+.btn-a {
   font-size: 1.3rem;
   border: none;
   text-decoration: none;
   color: white;
-  background-color: #3bbb55;
-  padding: 0.5rem 2rem;
-  box-shadow: 0 0 6px #3bbb55;
-  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
   font-weight: 500;
   transition: all 1s;
 }
-.btn-a:hover, .btn-a-up:hover {
+.btn-a:hover {
   box-shadow: 0 0 15px #3bbb55;
   transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
 }
@@ -250,22 +258,13 @@ p {
   transform: rotate3d(0, 0, 1000, 1deg) scale(1.1);
 }
 
-.btn-a-up {
-  background-color: #F46B27;
-  box-shadow: 0 0 6px #F46B27;
-}
-.btn-a-up:hover {
-  box-shadow: 0 0 15px #F46B27;
-  transform: rotate3d(10 0 1000 1deg) scale(1.1);
-}
-
 /*========================Colores=======================*/
 .color-verde {
   color: #3bbb55;
 }
 
 .color-verde-bg {
-  background-color: #0e880a;
+  background-color: #3bbb55;
 }
 
 .color-verde-claro {
@@ -319,6 +318,12 @@ p {
   border-radius: 10px;
   object-fit: cover;
 }
+.card .img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 .descrip-card {
   height: 40%;
@@ -326,6 +331,11 @@ p {
 }
 .descrip-card h3 {
   font-size: 20px;
+  font-weight: 600;
+}
+.descrip-card .h3-little {
+  font-size: 14px;
+  font-weight: 600;
 }
 .descrip-card .descrip-card-sub {
   display: flex;
@@ -351,7 +361,7 @@ p {
   font-size: 8px;
 }
 
-.destino-descrip-sub, .destino-descrip-sub-2 {
+.destino-descrip-sub, .destino-descrip-sub-4, .destino-descrip-sub-2, .destino-descrip-sub-3 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -364,44 +374,116 @@ p {
   background-position: center bottom;
   opacity: 0.9;
 }
-.destino-descrip-sub div, .destino-descrip-sub-2 div {
+.destino-descrip-sub div, .destino-descrip-sub-4 div, .destino-descrip-sub-2 div, .destino-descrip-sub-3 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   width: 60vw;
 }
-.destino-descrip-sub div p, .destino-descrip-sub-2 div p {
+.destino-descrip-sub div p, .destino-descrip-sub-4 div p, .destino-descrip-sub-2 div p, .destino-descrip-sub-3 div p {
   width: 70%;
 }
-.destino-descrip-sub div a, .destino-descrip-sub-2 div a {
+.destino-descrip-sub div a, .destino-descrip-sub-4 div a, .destino-descrip-sub-2 div a, .destino-descrip-sub-3 div a {
   align-self: flex-start;
 }
 
-.destino-descrip-sub-2 {
+.destino-descrip-sub-2, .destino-descrip-sub-3 {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4784313725), rgba(0, 0, 0, 0.4784313725)), url(../assets/img/hermoso-paisaje-rio-rodeado-vegetacion-dia.jpg);
   background-size: cover;
   background-position: center center;
   align-items: end;
 }
-.destino-descrip-sub-2 div {
+.destino-descrip-sub-2 div, .destino-descrip-sub-3 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   width: 80%;
 }
-.destino-descrip-sub-2 div p {
+.destino-descrip-sub-2 div p, .destino-descrip-sub-3 div p {
   width: 70%;
   text-align: end;
 }
-.destino-descrip-sub-2 div a {
+.destino-descrip-sub-2 div a, .destino-descrip-sub-3 div a {
   align-self: flex-end;
+}
+
+.destino-descrip-sub-3 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3450980392), rgba(0, 0, 0, 0.3725490196)), url(../assets/img/florayfauna.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.destino-descrip-sub-4 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4431372549), rgba(0, 0, 0, 0.3803921569)), url(../assets/img/Casa-bonita.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+.destino-descrip-sub-4 div h1 {
+  width: 130%;
+}
+
+.destino-descrip-sub-5 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4862745098), rgba(0, 0, 0, 0.4862745098)), url(../assets/img/actividades.jpg);
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destino-descrip-sub-5 div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.destino-descrip-sub-5 div h1 {
+  font-size: 3rem;
+  color: #00e82e;
+  text-align: center;
+}
+.destino-descrip-sub-5 div p {
+  color: white;
+  text-align: center;
+}
+
+.destino-descrip-sub-6 {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 60px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4588235294), rgba(0, 0, 0, 0.4784313725)), url(../assets/img/Turismo.jpg);
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.9;
+}
+.destino-descrip-sub-6 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 60vw;
+}
+.destino-descrip-sub-6 div h1 {
+  font-size: 2rem;
+}
+.destino-descrip-sub-6 div p {
+  width: 70%;
+}
+.destino-descrip-sub-6 div a {
+  align-self: flex-start;
 }
 
 .promo-ban {
   height: 90vh;
-  background-color: rgba(244, 107, 39, 0.1098039216);
 }
 
 /*----------------------- Galeria------------------*/
@@ -423,6 +505,7 @@ p {
   height: auto;
   background-color: #3E86F5;
   border-radius: 5px;
+  overflow: hidden;
 }
 .gal-2 div img {
   width: 100%;
@@ -444,8 +527,8 @@ p {
   background-color: white;
   width: 20vw;
   height: 50px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.202);
   display: flex;
   align-items: center;
@@ -466,7 +549,7 @@ p {
   width: 75vw;
   height: 150px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   border-top-left-radius: 0px;
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.202);
   display: flex;
@@ -537,9 +620,9 @@ li {
 
 /*===========Mapa=============*/
 .map {
-  width: 80%;
-  height: 70%;
-  border-radius: 50px;
+  width: 90%;
+  height: 80%;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.149);
   position: absolute;
@@ -553,8 +636,8 @@ li {
   background-color: rgb(255, 255, 255);
   position: relative;
   width: 35%;
-  height: 25%;
-  border-radius: 25px;
+  height: auto;
+  border-radius: 5px;
   top: 100px;
   right: 250px;
   padding: 20px;
@@ -566,6 +649,7 @@ li {
 .map-title span {
   padding-top: 100px;
   font-size: 15px;
+  text-align: justify;
 }
 
 .img-about {
@@ -656,6 +740,45 @@ li {
 
 .link3 i {
   color: #3b5998;
+}
+
+/*==============Actividades============*/
+.activities-descrip, .activities-descrip-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activities-descrip .img, .activities-descrip-2 .img {
+  width: 40%;
+  height: 70%;
+}
+.activities-descrip .img img, .activities-descrip-2 .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.activities-descrip .activiti-1, .activities-descrip-2 .activiti-1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px;
+}
+.activities-descrip .activiti-1 h2, .activities-descrip-2 .activiti-1 h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.activities-descrip .activiti-1 p, .activities-descrip-2 .activiti-1 p {
+  text-align: justify;
+}
+
+.activities-descrip-2 {
+  flex-direction: row-reverse;
 }
 
 * {
@@ -852,31 +975,6 @@ section {
     width: 100vw;
   }
 }
-.about {
-  height: 100%;
-}
-.about .content {
-  width: 90%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  box-sizing: border-box;
-  padding: 60px;
-}
-.about .content img {
-  width: 50%;
-  border-radius: 25px;
-}
-.about .content .descrip {
-  width: 60%;
-  margin-left: -35%;
-}
-.about .content .descrip p {
-  text-align: justify;
-}
-
 footer {
   padding: 0 130px;
 }
@@ -927,6 +1025,9 @@ footer {
   font-weight: 600;
   font-size: 44px;
 }
+.destino-descrip p {
+  text-align: justify;
+}
 
 .imagen-destino {
   justify-content: center;
@@ -946,7 +1047,7 @@ footer {
   }
 }
 .inform-destino {
-  background-color: rgba(227, 104, 28, 0.1647058824);
+  background-color: rgba(62, 135, 245, 0.0509803922);
   display: flex;
   align-items: center;
   gap: 5rem;
@@ -1121,33 +1222,6 @@ footer {
 .header-galery2 .header-sec p {
   width: 50%;
   text-align: justify;
-}
-
-.gal-1 {
-  width: 95%;
-  height: 100%;
-  margin-left: 2.5%;
-  display: flex;
-}
-
-.content-gal1 {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.content-gal1 div {
-  width: 45%;
-  height: 45%;
-  background-color: #53AE65;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.content-gal1 div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .content-gal2 {
@@ -1450,11 +1524,11 @@ footer {
 
 /*==============Actividades PAGES===========*/
 .header-activities {
-  width: 100vw;
   height: 89vh;
   margin-top: 11vh;
-  background: url(https://img.freepik.com/foto-gratis/madre-e-hijo-al-aire-libre-al-atardecer-espacio-copia_1249-526.jpg?w=900&t=st=1682905009~exp=1682905609~hmac=7bc7a369f5bbc58fdc137ac31e0ba2a06ce83cad4667ce896a26e6336cecf7a7);
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*----Componentes------*/

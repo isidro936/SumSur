@@ -6,7 +6,7 @@ $color-atardecer-oscuro:#ff5500;
 $color-azul:#3E86F5;
 $color-rosa-text:#F178B6;
 $color-rosa:#FCDDEC;
-$background-oscuro:#e3681c2a;
+$background-oscuro:#3e87f50d;
 $color-amarillo:#FFC107;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
@@ -229,31 +229,6 @@ section{
 }
 
 
-.about{
-    height: 100%;
-    .content{
-        width: 90%;
-        height: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        box-sizing: border-box;
-        padding: 60px;
-    img{
-        width: 50%;
-        border-radius: 25px;
-        }
-    .descrip{
-        width:60%;
-        margin-left: -35%;
-
-        p{
-            text-align: justify;
-        }
-        }
-    }
-}
 
 footer{
     padding: 0 130px;
@@ -310,6 +285,9 @@ footer{
         font-weight: 600;
         font-size: 44px;
         
+    }
+    p{
+        text-align: justify;
     }
 }
 .imagen-destino{
@@ -527,32 +505,7 @@ footer{
     }
 }
 
-.gal-1{
-    width: 95%;
-    height: 100%;
-    margin-left: 2.5%;
-    display: flex;
-}
 
-.content-gal1{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    div{
-        width: 45%;
-        height: 45%;
-        background-color: #53AE65;
-        border-radius: 5px;
-        overflow: hidden;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-}
 .content-gal2{
     width: 50%;
     height: 100%;
@@ -888,9 +841,9 @@ footer{
 /*==============Actividades PAGES===========*/
 
 .header-activities{
-    width: 100vw;
     height: 89vh;
     margin-top: 11vh;
-    background: url(https://img.freepik.com/foto-gratis/madre-e-hijo-al-aire-libre-al-atardecer-espacio-copia_1249-526.jpg?w=900&t=st=1682905009~exp=1682905609~hmac=7bc7a369f5bbc58fdc137ac31e0ba2a06ce83cad4667ce896a26e6336cecf7a7);
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
