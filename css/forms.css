@@ -121,6 +121,9 @@
   color: white;
   background-color: #3E86F5;
 }
+.inp input:focus::placeholder {
+  color: white;
+}
 .inp input:active {
   border: none;
   color: white;

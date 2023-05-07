@@ -132,6 +132,10 @@ $color-amarillo:#FFC107;
             border: none;
             color: white;
             background-color: $color-azul;
+            &::placeholder{
+                color: white;
+            }
+           
         }
         &:active{
             border: none;

@@ -503,7 +503,6 @@ p {
 }
 .gal-2 div {
   height: auto;
-  background-color: #3E86F5;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -1289,7 +1288,7 @@ footer {
   font-size: 30px;
 }
 
-/*=========Contactos========*/
+/*========Contactos========*/
 .header-contact {
   height: 89vh;
   margin-top: 11vh;
@@ -1532,6 +1531,6 @@ footer {
 }
 
 /*----Componentes------*/
-/*----estilos-globales----*/
+/*----estilos-globales---*/
 
 /*# sourceMappingURL=style.css.map */
