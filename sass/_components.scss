@@ -368,13 +368,15 @@ p{
         border-radius: 10px;
         object-fit: cover;
     }
-  
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .descrip-card{
     height: 40%;
     padding: 1rem;
-
     h3{
         font-size: 20px;
         font-weight: 600;
